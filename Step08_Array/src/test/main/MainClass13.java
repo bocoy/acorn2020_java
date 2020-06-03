@@ -84,11 +84,7 @@ public class MainClass13 {
 			me = 2;
 		}
 		int com = ran.nextInt(3);
-		if(me==0&&com==2) {
-			result = "win";
-		}else if(me==1 && com==0) {
-			result = "win";
-		}else if(me==2 && com==1) {
+		if((me==0&&com==2)||(me==1&&com==0)||(me==2&&com==1)) {
 			result = "win";
 		}else if(me == com) {
 			result = "draw";

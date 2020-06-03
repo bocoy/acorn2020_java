@@ -6,8 +6,13 @@ public class Rect {
 	public int height;
 	//생성자
 	public Rect(int width, int height) {
+<<<<<<< HEAD
 		this.width = width;
 		this.height = height;
+=======
+		this.width=width;
+		this.height=height;
+>>>>>>> refs/heads/master
 	}
 	//사각형의 면적을 반환하는 메소드
 	public int getArea() {
