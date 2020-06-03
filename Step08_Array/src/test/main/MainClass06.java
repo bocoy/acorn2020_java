@@ -13,14 +13,14 @@ public class MainClass06 {
 		 */
 		Scanner sc = new Scanner(System.in);
 		String[] str = new String[5];
-		str[0] = sc.nextLine();
-		str[1] = sc.nextLine();
-		str[2] = sc.nextLine();
-		str[3] = sc.nextLine();
-		str[4] = sc.nextLine();
 		for(int i=0; i<str.length; i++) {
-			System.out.println(i+1+"번째 문자: "+str[i]);
+			System.out.println(i+1+"번째 문자입력: ");
+			str[i] = sc.nextLine();
 		}
+		for(int i=0; i<str.length; i++) {
+			System.out.println(str[i]);
+		}
+		
 		
 		/*
 		 * 2. Random 객체를 이용해서 로또 번호를 6개 랜덤하게 얻어내서
@@ -30,15 +30,9 @@ public class MainClass06 {
 		 */
 		Random rand = new Random();
 		int[] lotto = new int[6];
-		lotto[0] = 1+rand.nextInt(100);
-		lotto[1] = 1+rand.nextInt(100);
-		lotto[2] = 1+rand.nextInt(100);
-		lotto[3] = 1+rand.nextInt(100);
-		lotto[4] = 1+rand.nextInt(100);
-		lotto[5] = 1+rand.nextInt(100);
 		for(int i=0; i<lotto.length; i++) {
+			lotto[i] = 1+rand.nextInt(100);
 			System.out.println(i+1+"번째 번호: "+lotto[i]);
-		}
-		
+		}	
 	}
 }
